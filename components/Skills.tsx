@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Users, TrendingUp, LineChart, Code } from 'lucide-react'
+import Image from 'next/image'
 
 interface Skill {
   id: number
@@ -12,6 +13,7 @@ interface Skill {
   color: string
   bgColor: string
   ringColor: string
+  backgroundImage: string
 }
 
 export default function Skills(): JSX.Element {
@@ -25,7 +27,8 @@ export default function Skills(): JSX.Element {
       description: "Leading and mentoring high-performing teams to achieve business objectives",
       color: "text-blue-500",
       bgColor: "bg-blue-50",
-      ringColor: "ring-blue-500"
+      ringColor: "ring-blue-500",
+      backgroundImage: "/team-management-bg.png"
     },
     {
       id: 2,
@@ -34,7 +37,8 @@ export default function Skills(): JSX.Element {
       description: "Tracking and improving key performance indicators for business growth",
       color: "text-green-500",
       bgColor: "bg-green-50",
-      ringColor: "ring-green-500"
+      ringColor: "ring-green-500",
+      backgroundImage: "/kpi-monitoring-bg.png"
     },
     {
       id: 3,
@@ -43,7 +47,8 @@ export default function Skills(): JSX.Element {
       description: "Developing and executing strategies for account success",
       color: "text-purple-500",
       bgColor: "bg-purple-50",
-      ringColor: "ring-purple-500"
+      ringColor: "ring-purple-500",
+      backgroundImage: "/strategic-planning-bg.png"
     },
     {
       id: 4,
@@ -52,13 +57,36 @@ export default function Skills(): JSX.Element {
       description: "Leveraging AI tools for modern frontend development",
       color: "text-red-500",
       bgColor: "bg-red-50",
-      ringColor: "ring-red-500"
+      ringColor: "ring-red-500",
+      backgroundImage: "/frontend-dev-bg.png"
     }
   ]
 
   return (
-    <div className="space-y-12 flex flex-col items-center">
-      <div className="w-full max-w-md">
+    <div className="space-y-12 flex flex-col items-center relative">
+      {/* Background Images */}
+      <AnimatePresence>
+        {selectedSkill && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 0.8, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.5 }}
+            className="fixed bottom-0 right-0 w-1/2 h-1/2 pointer-events-none z-0"
+          >
+            <Image
+              src={skills[selectedSkill - 1].backgroundImage}
+              alt=""
+              fill
+              className="object-contain"
+              priority
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Skills Grid */}
+      <div className="w-full max-w-md z-10">
         <div className="grid grid-cols-2 gap-4">
           {skills.map((skill) => (
             <motion.button
