@@ -72,7 +72,7 @@ export default function Skills(): JSX.Element {
             animate={{ opacity: 0.8, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.5 }}
-            className="fixed bottom-0 right-0 w-1/2 h-1/2 pointer-events-none z-0"
+            className="fixed md:bottom-0 md:right-0 top-24 right-0 w-full md:w-1/2 h-1/3 md:h-1/2 pointer-events-none z-0"
           >
             <Image
               src={skills[selectedSkill - 1].backgroundImage}
@@ -129,21 +129,6 @@ export default function Skills(): JSX.Element {
             </motion.button>
           ))}
         </div>
-      </div>
-
-      {/* Mostra le immagini in alto nella modalità mobile */}
-      <div className="block md:hidden">
-        {skills.map((skill) => (
-          <div key={skill.id} className="flex flex-col items-center mb-4">
-            <Image
-              src={skill.backgroundImage}
-              alt={skill.name}
-              width={100} // Dimensione dell'immagine
-              height={100} // Dimensione dell'immagine
-              className="rounded-full"
-            />
-          </div>
-        ))}
       </div>
     </div>
   )
