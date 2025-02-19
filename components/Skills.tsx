@@ -130,6 +130,21 @@ export default function Skills(): JSX.Element {
           ))}
         </div>
       </div>
+
+      {/* Mostra le immagini in alto nella modalità mobile */}
+      <div className="block md:hidden">
+        {skills.map((skill) => (
+          <div key={skill.id} className="flex flex-col items-center mb-4">
+            <Image
+              src={skill.backgroundImage}
+              alt={skill.name}
+              width={100} // Dimensione dell'immagine
+              height={100} // Dimensione dell'immagine
+              className="rounded-full"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 } 
