@@ -3,7 +3,7 @@ import { IntroSection } from "@/components/case-study/intro-section"
 import { DecisionMakersSection } from "@/components/case-study/decision-makers-section"
 import { BDRRoadmapSection } from "@/components/case-study/bdr-roadmap-section"
 import { TargetingSection } from "@/components/case-study/targeting-section"
-import { ColdCampaignSection } from "@/components/case-study/cold-campaign-section"
+import { ColdCampaignSection, KPISection } from "@/components/case-study/cold-campaign-section"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
@@ -18,6 +18,7 @@ export default function CaseStudyPage() {
         <BDRRoadmapSection />
         <TargetingSection />
         <ColdCampaignSection />
+        <KPISection />
       </main>
       <Footer />
     </>

@@ -31,6 +31,11 @@ export function DecisionMakersSection() {
                   <li>Impossibilità di individuare sprechi precisi per zona d'utilizzazione</li>
                   <li>Esigenza di operare in condizioni di crescente risparmio di bilancio e di aumento nei prezzi d'energia</li>
                 </ul>
+                <div className="mt-4 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+                  <p className="text-foreground font-medium">
+                    EKORE consente una visibilità unificata e granulare dei dati energetici in real-time (da ogni POD e ogni zona), rendendo finalmente individuabili e risolvibili gli sprechi nascosti anche nei contesti più complessi.
+                  </p>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -52,6 +57,11 @@ export function DecisionMakersSection() {
                   <p>
                     Manutenzione reattiva costosa: Il 70% degli interventi avviene in modalità "run-to-failure" con costi di emergenza
                     3-5 volte superiori alla manutenzione programmata. Downtime imprevisti che impattano la produttività aziendale.
+                  </p>
+                </div>
+                <div className="mt-4 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+                  <p className="text-foreground font-medium">
+                    EKORE abilita la manutenzione predittiva e la diagnosi immediata dei guasti tramite analisi AI, riducendo drasticamente downtime e costi extra dovuti a interventi d'emergenza.
                   </p>
                 </div>
               </div>
@@ -76,6 +86,11 @@ export function DecisionMakersSection() {
                     <li>Continua evoluzione delle policy e delle rendicontazioni</li>
                     <li>Dimostrare l'efficacia (ROI) delle iniziative di sostenibilità per giustificare investimenti e budget</li>
                   </ul>
+                </div>
+                <div className="mt-4 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+                  <p className="text-foreground font-medium">
+                    EKORE automatizza il reporting ESG integrando tutte le fonti dati rilevanti e offre KPI oggettivi e auditabili, facilitando compliance e dimostrando l'impatto reale (ROI) delle iniziative di sostenibilità.
+                  </p>
                 </div>
               </div>
             </CardContent>

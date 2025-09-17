@@ -119,7 +119,7 @@ export function HeroSection() {
                     <div>
                       <h4 className="text-lg font-semibold text-foreground mb-2">ELEVARE IL CONVERSATION LEVEL</h4>
                       <ul className="list-disc pl-6 space-y-2">
-                        <li>creare valore genuino prima ancora di vendere.</li>
+                        <li>Creare valore genuino prima ancora di vendere.</li>
                         <li>Sustainability-driven decisions: ESG compliance diventa decision criteria primario</li>
                         <li>L'SDR del futuro deve essere consulente strategico, non product pusher.</li>
                         <li>Non vende Digital Twin e data analisys AI come prodotto - diventa "Digital Transformation Partners" che co-creano il futuro energetico delle aziende italiane proponendo una  business transformation roadmap invece che semplici features.</li>
@@ -140,7 +140,7 @@ export function HeroSection() {
                         </li>
                         <li>
                           <span className="font-semibold">B. Investment & Private Equity</span>
-                          <div>"Il Digital Twin aumenta il valore degli asset del 8-12% in fase di exit - dovrebbe essere standard in due diligence"</div>
+                          <div>"Il Digital Twin aumenta il valore degli asset del 8-12% in fase di exit - dovrebbe essere standard nelle diligence"</div>
                         </li>
                         <li>
                           <span className="font-semibold">C. Supply Chain Optimization</span>
