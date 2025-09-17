@@ -37,7 +37,7 @@ export function ColdCampaignSection() {
                   <div className="space-y-3 text-muted-foreground">
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Sequenze Multicanale</h4>
-                      <p>Email, LinkedIn, telefonate automatizzate con template personalizzati ed A/B test su oggetto/copy</p>
+                      <p>Email, LinkedIn, </p>
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Engagement e Tracking</h4>
