@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className={`min-h-screen flex flex-col justify-center bg-[#f5f5ee] ${lato.className}`}>
+      <main className={`min-h-screen flex flex-col justify-center bg-background ${lato.className}`}>
         {/* Prima sezione: Intro */}
         <section className="flex items-center justify-center py-24">
           <div className="flex flex-col md:flex-row items-center gap-16 px-8 max-w-4xl">
