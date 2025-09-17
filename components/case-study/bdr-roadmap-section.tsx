@@ -20,7 +20,7 @@ const steps: Step[] = [
       "ricerca sui decision maker e enrichment",
       "identificazione dei trigger event",
     ],
-    tools: ["ZoomInfo", "LinkedIn Sales Navigator"],
+    tools: ["APOLLO.IO", "ZoomInfo"],
   },
 ]
 
@@ -112,7 +112,7 @@ export function BDRRoadmapSection() {
                             ))}
                           </div>
                           <p className="text-sm text-muted-foreground mt-2">
-                            ZoomInfo e LinkedIn Sales Navigator hanno database completi e ricchi di informazioni.
+                            APOLLO.IO e ZoomInfo hanno database completi e ricchi di informazioni.
                           </p>
                         </div>
                       )}

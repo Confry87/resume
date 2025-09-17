@@ -18,7 +18,7 @@ export function ColdCampaignSection() {
         <div className="max-w-6xl mx-auto space-y-6">
           <Card className="bg-background">
             <CardContent className="p-6 md:p-8 text-left">
-              <CardTitle className="text-xl md:text-2xl mb-4">CAMPAGNA EMAIL MULTI-TOUCHPOINT</CardTitle>
+              <CardTitle className="text-xl md:text-2xl mb-4">CAMPAGNA MULTI-TOUCHPOINT</CardTitle>
               <CardDescription className="text-base leading-relaxed mb-4">
                 Sequenza in 4 Touchpoints (12 giorni)
               </CardDescription>
